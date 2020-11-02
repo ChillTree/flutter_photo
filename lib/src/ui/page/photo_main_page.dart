@@ -401,6 +401,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
   void _onItemClick(AssetEntity data, int index) {
     var result = PhotoPreviewResult();
     isPushed = true;
+    selectedList.add(data);
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (ctx) {
